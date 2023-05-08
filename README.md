@@ -75,33 +75,20 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Unpack the contents of the folder.
-
-
-```sh
-  cd my-project
-  gem install
-```
+> Unpack the contents of the folder.
+> Open your favorite SQL editor.
+> Import the relevant files and make changes where necessary
 
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project:
 
-<!--
-Example command:
+> Open a connection to your favorite RDBMS, in this case, PostgreSQL
+> Select and run queries.
 
-```sh
-  rails server
-```
---->
-
-
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -138,6 +125,6 @@ If you like this project please give it a star.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
