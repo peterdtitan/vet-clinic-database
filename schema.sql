@@ -8,3 +8,5 @@ CREATE TABLE animals(
 	neutered BOOLEAN,
 	escape_tries INT
 );
+
+ALTER TABLE animals ADD COLUMN species VARCHAR(255);
