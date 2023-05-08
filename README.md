@@ -36,7 +36,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 > This is a database for a vet clinic that contains data about each animal as well as other properties linked.
 
-**[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
