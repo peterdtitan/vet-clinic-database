@@ -36,10 +36,10 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 [Vet clinic database] is a relational database to create the data structure for a vet clinic which creates a complete database with data about:
 
-- ** animals
-- ** animals owners
-- ** clinic employees
-- ** visits
+- **Animals**
+- **Animals owners**
+- **Clinic employees**
+- **Visits**
 
 
 ## 🛠 Built With <a name="built-with"></a>
