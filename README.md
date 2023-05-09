@@ -73,6 +73,10 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
+```setup
+git clone git@github.com:peterdtitan/vet-clinic-database.git
+```
+
 ### Install
 
 > Unpack the contents of the folder.
