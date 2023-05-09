@@ -34,7 +34,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 Vet Clinic Database <a name="about-project"></a>
 
-> This is a database for a vet clinic that contains data about each animal as well as other properties linked.
+[Vet clinic database] is a relational database to create the data structure for a vet clinic which creates a complete database with data about:
+
+[animals]
+[animals owners]
+[clinic employees]
+[visits]
 
 
 ## 🛠 Built With <a name="built-with"></a>
