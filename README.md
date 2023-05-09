@@ -63,11 +63,16 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To recreate this database follow these steps.
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
+
+```pre
+1. Install the vs code
+2. Internet
+```
 
 ### Setup
 
@@ -79,18 +84,21 @@ git clone git@github.com:peterdtitan/vet-clinic-database.git
 
 ### Install
 
-> Unpack the contents of the folder.
-> Open your favorite SQL editor.
-> Import the relevant files and make changes where necessary
+- Unpack the contents of the folder. Open your favorite SQL editor. Import the relevant files and make changes where necessary
 
 
 ### Usage
 
-To run the project:
+To run the project, execute the following command:
 
-> Open a connection to your favorite RDBMS, in this case, PostgreSQL
-> Select and run queries.
 
+```sh
+1. Open the files in the vs code
+2. See the queries of sql command
+3. Open a connection to your favorite RDBMS, in this case, PostgreSQL Select and run queries.
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
