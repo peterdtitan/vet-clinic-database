@@ -112,8 +112,9 @@ To run the project, execute the following command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> No new features to be added.
+- [ ] **[animals owners]**
+- [ ] **[clinic employees]**
+- [ ] **[visits]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
