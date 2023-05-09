@@ -1,5 +1,6 @@
 /* Database schema to keep the structure of entire database. */
 
+
 CREATE TABLE animals(
 	id INT GENERATED ALWAYS AS IDENTITY,
 	name TEXT NOT NULL,
@@ -8,5 +9,6 @@ CREATE TABLE animals(
 	neutered BOOLEAN,
 	escape_tries INT
 );
+
 
 ALTER TABLE animals ADD COLUMN species VARCHAR(255);

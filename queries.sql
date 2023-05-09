@@ -9,6 +9,8 @@ ROLLBACK;
 SELECT * FROM animals;
 
 
+
+
 -- Inside a transaction:
 -- Update the animals table by setting the species column to digimon for all animals that have a name ending in mon.
 -- Update the animals table by setting the species column to pokemon for all animals that don't have species already set.
@@ -30,6 +32,7 @@ COMMIT;
 SELECT * FROM animals;
 
 
+
 -- Inside a transaction delete all records in the animals table, then roll back the transaction.
 -- After the rollback verify if all records in the animals table still exists.
 
@@ -38,6 +41,8 @@ DELETE FROM animals;
 ROLLBACK;
 
 SELECT * FROM animals;
+
+
 
 
 -- Inside a transaction:
@@ -57,6 +62,7 @@ UPDATE animals SET weight = weight * (-1) WHERE weight < 0;
 COMMIT;
 
 SELECT * FROM animals;
+
 
 
 
