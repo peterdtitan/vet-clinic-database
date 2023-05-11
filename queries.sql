@@ -245,13 +245,12 @@ WHERE specializations.id IS NULL;
 -- What specialty should Maisy Smith consider getting? Look for the species she gets the most.
 
 SELECT species.name, COUNT(*) AS num_visits
-FROM animals
-JOIN visits ON animals.id = visits.animal_id
+FROM visits
+JOIN animals ON visits.animal_id = animals.id
 JOIN species ON animals.species_id = species.id
-WHERE animals.owner_id = 2
+WHERE visits.vet_id = (SELECT id FROM vets WHERE name = 'Maisy Smith')
 GROUP BY species.name
 ORDER BY num_visits DESC
 LIMIT 1;
-
 
 
