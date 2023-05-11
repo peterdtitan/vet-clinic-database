@@ -1,5 +1,10 @@
 /* Populate database with sample data. */
 
+INSERT INTO animals (name, dob, weight, neutered, escape_tries) VALUES ('Agumon', '2020-02-03', 10.23, true, 0);
+INSERT INTO animals (name, dob, weight, neutered, escape_tries) VALUES ('Gabumon', '2018-11-15', 8, true, 2);
+INSERT INTO animals (name, dob, weight, neutered, escape_tries) VALUES ('Pikachu', '2021-01-07', 15.04, false, 1);
+INSERT INTO animals (name, dob, weight, neutered, escape_tries) VALUES ('Devimon', '2017-05-12', 11, true, 5);
+
 /* Animal: His name is Charmander. 
 *  He was born on Feb 8th, 2020, and currently weighs -11kg. 
 *  He is not neutered and he has never tried to escape. 
@@ -7,7 +12,6 @@
 
 INSERT INTO animals(name, dob, weight, neutered, escape_tries) 
 VALUES ('Charmander', '02-08-2020', -11, FALSE, 0);
-
 
 
 /* Animal: Her name is Plantmon. 
@@ -68,3 +72,66 @@ VALUES ('Blossom', '10-13-1998', 17, TRUE, 3);
 
 INSERT INTO animals(name, dob, weight, neutered, escape_tries) 
 VALUES ('Ditto', '05-14-2022', 17, TRUE, 4);
+
+
+
+
+
+INSERT INTO owners(full_name, age)
+VALUES ('Sam Smith', 34);
+
+INSERT INTO owners(full_name, age)
+VALUES ('Jennifer Orwell', 19);
+
+INSERT INTO owners(full_name, age)
+VALUES ('Bob', 45);
+
+INSERT INTO owners(full_name, age)
+VALUES ('Melody Pond', 77);
+
+INSERT INTO owners(full_name, age)
+VALUES ('Dean Winchester', 14);
+
+INSERT INTO owners(full_name, age)
+VALUES ('Jodie Whittaker', 38);
+
+
+
+
+INSERT INTO species(name)
+VALUES('Pokemon');
+
+INSERT INTO species(name)
+VALUES('Digimon');
+
+
+UPDATE animals
+SET species_id = (SELECT id FROM species WHERE name = 'Pokemon')
+WHERE name NOT LIKE '%mon';
+
+UPDATE animals
+SET species_id = (SELECT id FROM species WHERE name = 'Digimon')
+WHERE name LIKE '%mon';
+
+
+
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHERE name = 'Agumon';
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHERE name IN ('Gabumon', 'Pikachu');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
+WHERE name IN ('Devimon', 'Plantmon');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+
+UPDATE animals
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+WHERE name IN ('Angemon', 'Boarmon');
