@@ -34,9 +34,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 Vet Clinic Database <a name="about-project"></a>
 
-> This is a database for a vet clinic that contains data about each animal as well as other properties linked.
+[Vet clinic database] is a relational database to create the data structure for a vet clinic which creates a complete database with data about:
 
-**[your_project__name]** is a...
+- **Animals**
+- **Animals owners**
+- **Clinic employees**
+- **Visits**
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -64,45 +68,44 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To recreate this database follow these steps.
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
+```pre
+1. Install the vs code
+2. Internet
+```
+
 ### Setup
 
 Clone this repository to your desired folder:
 
+```setup
+git clone git@github.com:peterdtitan/vet-clinic-database.git
+```
+
 ### Install
 
-Unpack the contents of the folder.
-
-
-```sh
-  cd my-project
-  gem install
-```
+- Unpack the contents of the folder. Open your favorite SQL editor. Import the relevant files and make changes where necessary
 
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+1. Open the files in the vs code
+2. See the queries of sql command
+3. Open a connection to your favorite RDBMS, in this case, PostgreSQL Select and run queries.
 ```
---->
 
-
-<!-- AUTHORS -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -114,8 +117,9 @@ Example command:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> No new features to be added.
+- [ ] **[animals owners]**
+- [ ] **[clinic employees]**
+- [ ] **[visits]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,6 +143,6 @@ If you like this project please give it a star.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
